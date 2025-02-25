@@ -1,9 +1,9 @@
-import HeroSection from './components/HeroSection';
+import Home from "./pages/Home";
 
 function App() {
   return (
     <div>
-      <HeroSection />
+      <Home />
     </div>
   );
 }
