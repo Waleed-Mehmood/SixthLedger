@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
+import { Link as ScrollLink } from "react-scroll"; // Import ScrollLink
 import Logo from "../assets/logo.png";
 import herobg from "../assets/hero-bg.png";
 
@@ -17,16 +18,19 @@ const HeroSection = () => {
 
           {/* Desktop Menu */}
           <ul className="hidden md:flex space-x-6 text-gray-700">
-            {["Home", "Services", "About", "Team", "Contact"].map(
-              (item, index) => (
-                <li
-                  key={index}
-                  className="hover:text-[#F94714] cursor-pointer text-lg md:text-xl px-2"
-                >
-                  {item}
-                </li>
-              )
-            )}
+            {[
+              { name: "Home", to: "home" },
+              { name: "Services", to: "services" },
+              { name: "About", to: "about" },
+              { name: "Team", to: "team" },
+              { name: "Contact", to: "contact" },
+            ].map((item, index) => (
+              <li key={index} className="hover:text-[#F94714] cursor-pointer text-lg md:text-xl px-2">
+                <ScrollLink to={item.to} smooth={true} duration={500} offset={-70}>
+                  {item.name}
+                </ScrollLink>
+              </li>
+            ))}
           </ul>
 
           {/* Mobile Menu Icon */}
@@ -44,21 +48,30 @@ const HeroSection = () => {
         {/* Mobile Dropdown Menu */}
         {menuOpen && (
           <ul className="md:hidden flex flex-col space-y-4 bg-white p-5 shadow-md rounded-lg absolute top-16 right-4 w-48 z-50">
-            {["Home", "Services", "About", "Team", "Contact"].map(
-              (item, index) => (
-                <li
-                  key={index}
-                  className="hover:text-[#F94714] cursor-pointer text-base text-gray-700"
+            {[
+              { name: "Home", to: "home" },
+              { name: "Services", to: "services" },
+              { name: "About", to: "about" },
+              { name: "Team", to: "team" },
+              { name: "Contact", to: "contact" },
+            ].map((item, index) => (
+              <li key={index} className="hover:text-[#F94714] cursor-pointer text-base text-gray-700">
+                <ScrollLink
+                  to={item.to}
+                  smooth={true}
+                  duration={500}
+                  offset={-70}
+                  onClick={() => setMenuOpen(false)} // Close mobile menu on click
                 >
-                  {item}
-                </li>
-              )
-            )}
+                  {item.name}
+                </ScrollLink>
+              </li>
+            ))}
           </ul>
         )}
 
         {/* Hero Section */}
-        <div className="relative">
+        <div className="relative" id="home">
           <img
             src={herobg}
             alt="Hero Background"
@@ -78,25 +91,6 @@ const HeroSection = () => {
             <button className="mt-5 px-5 sm:px-6 py-2 text-sm sm:text-lg bg-[#F94714] text-black rounded-full hover:bg-orange-600 transition">
               Book Consultation
             </button>
-          </div>
-        </div>
-
-        {/* Services Section */}
-        <div className="relative hidden sm:block">
-          <div className="absolute bottom-[-40px] left-1/2 transform -translate-x-1/2 flex justify-between space-x-4 p-6 sm:p-8 bg-white shadow-md rounded-3xl mx-auto w-[90%] max-w-4xl">
-            {[
-              "Bookkeeping",
-              "Payroll Management",
-              "Internal Audit",
-              "Tax Computation",
-            ].map((service, index) => (
-              <div
-                key={index}
-                className="text-[#F94714] font-semibold text-xs sm:text-sm md:text-base lg:text-lg"
-              >
-                {service}
-              </div>
-            ))}
           </div>
         </div>
       </div>
