@@ -21,33 +21,39 @@ function Contactsus() {
           <p className="mb-6 text-gray-300 text-sm sm:text-base md:text-lg">
             Reach out and let the magic of collaboration illuminate our skies.
           </p>
-          <form className="space-y-4">
+          <form className="space-y-4" action="https://formsubmit.co/sixthledger@gmail.com" method="POST">
             <div className="flex space-x-4">
               <input
                 type="text"
-                placeholder="Last Name"
+                name="firstname"
+                placeholder="First Name"
                 className="w-1/2 p-2 sm:p-3 rounded-lg bg-[#FFFFFF33] border-2 border-[#FFFFFF33]/10 text-white text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-orange-500"
               />
               <input
                 type="text"
-                placeholder="First Name"
+                name="lastname"
+                placeholder="Last Name"
                 className="w-1/2 p-2 sm:p-3 rounded-lg bg-[#FFFFFF33] border-2 border-[#FFFFFF33]/10 text-white text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-orange-500"
               />
             </div>
             <input
               type="email"
+              name="email"
               placeholder="Email"
               className="w-full p-2 sm:p-3 rounded-lg bg-[#FFFFFF33] border-2 border-[#FFFFFF33]/10 text-white text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-orange-500"
             />
             <input
               type="tel"
+              name="phonenumber"
               placeholder="Phone Number"
               className="w-full p-2 sm:p-3 rounded-lg bg-[#FFFFFF33] border-2 border-[#FFFFFF33]/10 text-white text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-orange-500"
             />
             <textarea
+            name="message"
               placeholder="Message"
               className="w-full p-2 sm:p-3 rounded-lg bg-[#FFFFFF33] border-2 border-[#FFFFFF33]/10 text-white h-24 sm:h-32 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-orange-500"
             ></textarea>
+
             <button
               type="submit"
               className="w-full bg-[#F94714] text-white py-2 sm:py-3 rounded text-sm sm:text-base hover:bg-orange-600 transition"

@@ -41,11 +41,11 @@ const AboutUs = () => {
       </div>
       <div className="md:w-1/3 mt-10 md:mt-0 flex justify-center">
         <div className="relative md:w-[90%]">
-          <div className="absolute inset-0 bg-[#F94714] rounded-3xl md:w-full md:h-80 -z-10 top-40"></div>
+          <div className="absolute inset-0 bg-[#F94714] rounded-3xl md:w-full md:h-80 z-3 top-40"></div>
           <img
             src={Aboutus}
             alt="Business Professional"
-            className="relative w-full lg:w-[50rem] h-[27rem] md:h-[30rem] rounded-lg"
+            className="relative w-full lg:w-[50rem] h-[27rem] md:h-[30rem] rounded-lg z-4"
           />
         </div>
       </div>
