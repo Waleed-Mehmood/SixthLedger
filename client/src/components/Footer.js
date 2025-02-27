@@ -95,8 +95,9 @@ import footer from "../assets/sixthLedger-footer.png";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white pt-5">
-      {/* Newsletter Section */}
+    <footer className="bg-gray-900 text-white pt-5 flex justify-center">
+      <div className="container">
+        {/* Newsletter Section */}
       <div className="bg-[#979797] mx-auto max-w-6xl rounded-lg p-6 text-center">
         <div className="flex flex-col md:flex-row justify-between items-center p-6 w-full">
           {/* Left Text Section */}
@@ -124,7 +125,7 @@ export default function Footer() {
       </div>
 
       {/* Footer Content */}
-      <div className="container mx-auto px-6 sm:px-12 lg:px-24 py-10">
+      <div className="container mx-auto px-12 sm:px-0 py-10 max-w-6xl">
         <div className="flex flex-col md:flex-row justify-between space-y-6 md:space-y-0">
           {/* Navigation Links */}
           <nav className="text-center md:text-left">
@@ -173,6 +174,7 @@ export default function Footer() {
             <a href="#" className="hover:text-white">Privacy Policy</a>
           </div>
         </div>
+      </div>
       </div>
     </footer>
   );

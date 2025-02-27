@@ -10,7 +10,7 @@ const PartnerSection = () => {
         <img
           src={Partner}
           alt="Business Woman"
-          className="relative w-full lg:w-[50rem] h-[27rem] md:h-[30rem] rounded-lg"
+          className="relative lg:w-[50rem] h-[27rem] md:h-[30rem] rounded-lg"
         />
       </div>
 

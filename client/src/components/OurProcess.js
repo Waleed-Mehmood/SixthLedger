@@ -4,23 +4,23 @@ function OurProcess() {
   const steps = [
     {
       number: 1,
-      title: "Consultation",
-      description: "Streamline employee payroll processes for seamless and timely salary disbursements"
+      title: "Discovery Call",
+      description: "share your needs"
     },
     {
       number: 2,
-      title: "Custom Solutions",
-      description: "Streamline employee payroll processes for seamless and timely salary disbursements"
+      title: "Compatibility Check",
+      description: "we make sure it's a fit"
     },
     {
       number: 3,
-      title: "Implementation",
-      description: "Streamline employee payroll processes for seamless and timely salary disbursements"
+      title: "Hassle-Free Setup",
+      description: "we handle the heavy lifting"
     },
     {
       number: 4,
-      title: "Continuous Support",
-      description: "Streamline employee payroll processes for seamless and timely salary disbursements"
+      title: "Custom Agreement",
+      description: "no hidden fees,ever"
     },
   ];
 
@@ -32,7 +32,7 @@ function OurProcess() {
           Our <span className="text-[#f94713]">Process</span>
         </h1>
         <p className="text-gray-600 text-sm sm:text-base md:text-lg mb-16 max-w-3xl mx-auto">
-          Streamline employee payroll processes for seamless and timely salary disbursements
+          From chaos to clarify your bookkeeping journey with us
         </p>
 
         {/* Timeline */}

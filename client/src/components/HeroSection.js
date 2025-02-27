@@ -75,7 +75,7 @@ const HeroSection = () => {
           <img
             src={herobg}
             alt="Hero Background"
-            className="w-full h-[400px] sm:h-[500px] md:h-[550px] object-cover brightness-50 rounded-3xl"
+            className="w-full h-[400px] sm:h-[500px] md:h-[550px] object-cover brightness-30 rounded-3xl"
           />
           <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-center text-white px-5">
             <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold">

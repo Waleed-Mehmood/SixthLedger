@@ -45,7 +45,7 @@ const AboutUs = () => {
           <img
             src={Aboutus}
             alt="Business Professional"
-            className="relative w-full lg:w-[50rem] h-[27rem] md:h-[30rem] rounded-lg z-4"
+            className="relative lg:w-[50rem] h-[27rem] md:h-[30rem] rounded-lg z-4"
           />
         </div>
       </div>
